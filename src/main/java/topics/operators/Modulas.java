@@ -17,7 +17,7 @@ public class Modulas {
         // Rule 4 : The signage if reminder matter only on a NOT ON b
         int a3 =-12;
         int b3 =-10;
-        System.out.println(a3%b3); // -2 
+        System.out.println(a3%b3); // -2
 
     }
 }
