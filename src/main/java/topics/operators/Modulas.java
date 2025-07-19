@@ -13,7 +13,11 @@ public class Modulas {
         // Rule 3 : it does not matter what is the signage of b ex. a % -b = reminder
         int a2 =10;
         int b2 =-7;
-        System.out.println(a2%b2); // 3 [It does not matter whether b is a negative or positive number] 
+        System.out.println(a2%b2); // 3 [It does not matter whether b is a negative or positive number]
+        // Rule 4 : The signage if reminder matter only on a NOT ON b
+        int a3 =-12;
+        int b3 =-10;
+        System.out.println(a3%b3); // -2 
 
     }
 }
