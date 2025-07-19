@@ -10,5 +10,9 @@ public class Variables {
         // 3 : variables can not contain special chars like (! ,@ , # , ^ , % etc.)
         // 4 : spaces are not allowed while giving a name in a variable
         // 5 : keywords are not allowed as a variable name
+        System.out.println("hello"+5+4);
+        System.out.println(5+4+"hello");
+        System.out.println((5+4)+"hello");
+        System.out.println("hello"+(5+4));
     }
 }
