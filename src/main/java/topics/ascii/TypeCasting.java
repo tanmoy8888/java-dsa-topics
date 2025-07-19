@@ -1,6 +1,6 @@
 package topics.ascii;
 
-public class Chars {
+public class TypeCasting {
     public static void main(String[] args) {
         // ASCII values of chars
         // A starts from 65
