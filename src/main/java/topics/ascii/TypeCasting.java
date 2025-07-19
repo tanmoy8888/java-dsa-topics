@@ -15,5 +15,16 @@ public class TypeCasting {
         int b = c2;
         System.out.println("a = " + a);
         System.out.println("b = " + b);
+        // chars + int gives int
+        System.out.println(c1+0);
+        // char + char = int
+        System.out.println(c1+c2);
+
+        /**
+         *   very important below order has been followed in java
+         *   char->int->float->double
+         */
+        // Very important below
+        System.out.println(1+'1');
     }
 }
