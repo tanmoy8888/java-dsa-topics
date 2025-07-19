@@ -7,5 +7,7 @@ public class Inputs {
         Scanner sc = new Scanner(System.in);
         int i = sc.nextInt();
         System.out.println("i = " + i);
+        double d = sc.nextDouble();
+        System.out.println("d = " + d);
     }
 }
