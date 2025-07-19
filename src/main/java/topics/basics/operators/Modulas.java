@@ -1,4 +1,4 @@
-package topics.operators;
+package topics.basics.operators;
 
 public class Modulas {
     public static void main(String[] args) {

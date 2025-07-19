@@ -1,4 +1,4 @@
-package topics.type_casting;
+package topics.basics.type_casting;
 
 public class TypeCasting {
     public static void main(String[] args) {

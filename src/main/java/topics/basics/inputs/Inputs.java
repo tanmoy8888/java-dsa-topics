@@ -1,4 +1,4 @@
-package topics.inputs;
+package topics.basics.inputs;
 
 import java.util.Scanner;
 

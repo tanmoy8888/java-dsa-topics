@@ -1,4 +1,4 @@
-package topics.operators;
+package topics.basics.operators;
 
 public class IncrementAndDecrementOperators {
     public static void main(String[] args) {
