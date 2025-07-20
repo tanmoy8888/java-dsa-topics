@@ -14,7 +14,7 @@ public class FindMax {
         if (first > second && first > third) {
             System.out.println(first + " first is greatest");
         } else if (second > first && second > third) {
-            System.out.println(+second + " second is greatest");
+            System.out.println(second + " second is greatest");
         } else {
             System.out.println(third + " third is greatest");
         }
