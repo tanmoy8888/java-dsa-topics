@@ -9,6 +9,7 @@ package topics.basics.loops;
  * c C
  * ...
  * ...
+ *  small alphabets and then capital alphabets
  */
 
 public class PrintSmallAndCapitalAlphabets {
