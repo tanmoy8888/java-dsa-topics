@@ -18,6 +18,5 @@ public class FindMax {
         } else {
             System.out.println(third + " third is greatest");
         }
-
     }
 }
