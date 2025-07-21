@@ -7,15 +7,12 @@ public class SumOfDigit {
         int reminder = 0;
         while (number != 0) {
            if(number < 10){
-               System.out.println("In if....");
                sum = sum+number;
                break;
            }else {
-               sum = number%10;
-               System.out.println("sum = " + sum);
-               sum = sum+number;
+               reminder = number%10;
+               sum = sum+reminder;
                number /=10;
-               System.out.println("number = " + number);
            }
         }
         System.out.println("sum = " + sum);
