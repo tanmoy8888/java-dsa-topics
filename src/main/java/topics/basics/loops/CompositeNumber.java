@@ -10,6 +10,7 @@ public class CompositeNumber {
         for (int i = 2; i < n-1; i++) {
             if(n%i ==0){
                 composite =true;
+                break;
             }
         }
         System.out.println("composite = " + composite);
