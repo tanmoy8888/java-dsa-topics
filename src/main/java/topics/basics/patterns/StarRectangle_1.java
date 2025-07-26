@@ -1,9 +1,12 @@
 package topics.basics.patterns;
 
+import java.util.Scanner;
+
 public class StarRectangle_1 {
     public static void main(String[] args) {
-        int row = 4;
-        int col = 5;
+        Scanner sc = new Scanner(System.in);
+        int row = sc.nextInt();
+        int col = sc.nextInt();
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < col; j++) {
                 System.out.print("* ");
