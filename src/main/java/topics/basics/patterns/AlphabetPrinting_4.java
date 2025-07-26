@@ -12,6 +12,7 @@ public class AlphabetPrinting_4 {
             else {
                 j = 97+i;
             for (j = 1; j < col; j++) {
+                System.out.print("j = " + j);
                 System.out.print(" "+(char)j);
             }
 
