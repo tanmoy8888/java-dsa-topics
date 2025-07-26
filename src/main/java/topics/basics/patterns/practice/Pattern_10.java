@@ -27,7 +27,7 @@ public class Pattern_10 {
         }*/
 
         // Second approach -- without using extra variable
-        
+
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= i; j++) {
                 if (j > 1) System.out.print((2 * j - 1) + " ");
