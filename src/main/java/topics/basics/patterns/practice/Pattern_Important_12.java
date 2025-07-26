@@ -1,5 +1,15 @@
 package topics.basics.patterns.practice;
 
+/**
+ Print this below pattern
+
+ *
+ * *
+ * * *
+ * * * *
+
+ */
+
 public class Pattern_Important_12 {
     public static void main(String[] args) {
         int n = 4;
