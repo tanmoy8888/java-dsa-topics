@@ -12,7 +12,7 @@ public class Factorial {
 
     private static int factorial(int number) {
         int fact = 1;
-        for (int i = 1; i <= number; i++) {
+        for (int i = 2; i <= number; i++) {
             fact *= i;
         }
         return fact;
