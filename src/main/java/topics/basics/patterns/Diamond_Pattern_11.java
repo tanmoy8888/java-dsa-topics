@@ -2,6 +2,11 @@ package topics.basics.patterns;
 
 import java.util.Scanner;
 
+/**
+ Print this below pattern
+ 
+ */
+
 public class Diamond_Pattern_11 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
