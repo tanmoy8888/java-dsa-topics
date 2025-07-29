@@ -3,8 +3,8 @@ package topics.basics.patterns;
 import java.util.Scanner;
 
 /**
- Print this below pattern
- 
+ Print diamond pattern
+
  */
 
 public class Diamond_Pattern_11 {
