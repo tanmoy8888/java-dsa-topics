@@ -1,5 +1,9 @@
 package topics.arrays;
 
+/**
+ * Find maximum element of a given array
+ */
+
 public class MaxElementOfAnArray {
     public static void main(String[] args) {
         int [] arr = {1,2,3,4,5,6};
