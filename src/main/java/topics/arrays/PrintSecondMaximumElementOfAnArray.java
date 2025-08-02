@@ -8,7 +8,7 @@ public class PrintSecondMaximumElementOfAnArray {
 
     }
 
-    public static int getSecondLargest(int[] arr) {
+   /* public static int getSecondLargest(int[] arr) {
         int max = arr[0];
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > max) max = arr[i];
@@ -16,6 +16,20 @@ public class PrintSecondMaximumElementOfAnArray {
         int secondMax = -1;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > secondMax && arr[i] != max) secondMax = arr[i];
+        }
+        return secondMax;
+    }*/
+
+    // Another approach using single loop
+
+    public static int getSecondLargest(int[] arr) {
+        int max = -1;
+        int secondMax = -1;
+        for (int i = 0; i < arr.length; i++) {
+            if(arr[i] > max) {
+                secondMax = max;
+                max = arr[i];
+            }
         }
         return secondMax;
     }
