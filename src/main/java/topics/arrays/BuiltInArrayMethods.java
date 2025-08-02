@@ -9,7 +9,10 @@ public class BuiltInArrayMethods {
         /*Arrays.sort(arr);
         printArray(arr);*/
 
-        Arrays.sort(arr,2,4);
+        /*Arrays.sort(arr,2,4);
+        printArray(arr);*/
+
+        Arrays.fill(arr,4);
         printArray(arr);
     }
 
