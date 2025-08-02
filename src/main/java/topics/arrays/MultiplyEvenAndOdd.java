@@ -10,7 +10,7 @@ public class MultiplyEvenAndOdd {
             arr[i] = sc.nextInt();
         }
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] % 2 == 0) arr[i] += 10;
+            if (i % 2 == 0) arr[i] += 10;
             else arr[i] *= 2;
         }
         for (int i = 0; i < arr.length; i++) {
