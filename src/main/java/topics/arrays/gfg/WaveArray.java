@@ -8,6 +8,12 @@ import java.util.Arrays;
  * If there are multiple solutions, find the lexicographically smallest one.
  * <p>
  * Note: The given array is sorted in ascending order, and modify the given array in-place without returning a new array.
+ *
+ * Input: arr[] = [1, 2, 3, 4, 5]
+ * Output: [2, 1, 4, 3, 5]
+ * Explanation: Array elements after sorting it in the waveform are 2, 1, 4, 3, 5.
+ *
+ * 
  */
 public class WaveArray {
     public static void main(String[] args) {
