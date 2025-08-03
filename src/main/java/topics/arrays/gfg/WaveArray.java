@@ -16,6 +16,10 @@ import java.util.Arrays;
  * Input: arr[] = [2, 4, 7, 8, 9, 10]
  * Output: [4, 2, 8, 7, 10, 9]
  * Explanation: Array elements after sorting it in the waveform are 4, 2, 8, 7, 10, 9.
+ *
+ * Input: arr[] = [1]
+ * Output: [1]
+ *
  * 
  */
 public class WaveArray {
