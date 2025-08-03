@@ -12,7 +12,8 @@ import java.util.Arrays;
 public class WaveArray {
     public static void main(String[] args) {
         //int[] arr = {1, 2, 3, 4, 5};
-        int[] arr = {2, 4, 7, 8, 9, 10};
+        // int[] arr = {2, 4, 7, 8, 9, 10};
+        int[] arr = {1, 8, 10, 14};
         sortInWave(arr);
     }
 
@@ -21,11 +22,7 @@ public class WaveArray {
         int end = arr.length - 1;
         int temp = 0;
         while (start < end) {
-            if (start > 0 && arr[start - 1] < arr[start]) {
-                temp = arr[start - 1];
-                arr[start - 1] = arr[start];
-                arr[start] = temp;
-            } else if (start < end && arr[start] < arr[start + 1]) {
+            if (arr[start] < arr[start + 1]) {
                 temp = arr[start];
                 arr[start] = arr[start + 1];
                 arr[start + 1] = temp;
