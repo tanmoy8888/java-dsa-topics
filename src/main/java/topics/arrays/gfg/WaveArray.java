@@ -3,6 +3,7 @@ package topics.arrays.gfg;
 import java.util.Arrays;
 
 /**
+ * 
  * GFG : Given an sorted array arr[] of integers. Sort the array into a wave-like array(In Place).
  * In other words, arrange the elements into a sequence such that arr[1] >= arr[2] <= arr[3] >= arr[4] <= arr[5] ..... and so on.
  * If there are multiple solutions, find the lexicographically smallest one.
@@ -20,7 +21,10 @@ import java.util.Arrays;
  * Input: arr[] = [1]
  * Output: [1]
  *
- * 
+ * Constraints:
+ * 1 ≤ arr.size ≤ 106
+ * 0 ≤ arr[i] ≤109
+ *
  */
 public class WaveArray {
     public static void main(String[] args) {
