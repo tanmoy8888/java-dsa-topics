@@ -34,9 +34,8 @@ public class TransposeMatrix {
         int[][] matrix = {{1, 2, 3}, {4, 5, 6}};
         System.out.println("Printing original array");
         printArray(matrix);
-        transpose(matrix);
         System.out.println("Printing transposed array");
-        printArray(matrix);
+        printArray( transpose(matrix));
     }
 
     public static int[][] transpose(int[][] matrix) {
