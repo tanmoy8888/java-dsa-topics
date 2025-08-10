@@ -35,22 +35,18 @@ public class TransposeMatrix {
         System.out.println("Printing original array");
         printArray(matrix);
         System.out.println("Printing transposed array");
-        printArray( transpose(matrix));
+        printArray(transpose(matrix));
     }
 
     public static int[][] transpose(int[][] matrix) {
         int rows = matrix.length;
         int cols = matrix[0].length;
-
         int[][] transpose = new int[cols][rows];
-
-        // Transpose the matrix
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 transpose[j][i] = matrix[i][j];
             }
         }
-
         return transpose;
     }
 
