@@ -2,7 +2,7 @@ package topics.arrays.two_dimension_array;
 
 // This is for only square matrix
 
-public class TransposeOfAMatrix {
+public class TransposeOfASquareMatrix {
     public static void main(String[] args) {
         int[][] arr = {{2, 8, 3, 4}, {7, 2, 1, 6}, {5, 5, 4, 1}, {3, 1, 8, 2}};
          printArray(arr);
