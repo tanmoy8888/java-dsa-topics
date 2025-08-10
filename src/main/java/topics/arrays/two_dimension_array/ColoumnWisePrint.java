@@ -1,4 +1,4 @@
-package topics.arrays.two_pointers;
+package topics.arrays.two_dimension_array;
 
 public class ColoumnWisePrint {
     public static void main(String[] args) {
