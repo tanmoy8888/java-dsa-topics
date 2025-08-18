@@ -38,7 +38,7 @@ public class CommonElements {
             } else if (a[i] > b[j]) {
                 j++;
             } else if (a[i] < b[j]) {
-                j++;
+                i++;
             }
         }
         return list;
