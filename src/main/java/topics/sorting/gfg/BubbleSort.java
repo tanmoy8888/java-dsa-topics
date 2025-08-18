@@ -2,6 +2,10 @@ package topics.sorting.gfg;
 
 import java.util.Arrays;
 
+/**
+ *   This is bubble sort code
+ */
+
 public class BubbleSort {
     public static void main(String[] args) {
         int[] arr = {1, 3, 5, 4, 2};
