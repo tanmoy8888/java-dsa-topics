@@ -2,6 +2,11 @@ package topics.sorting.gfg;
 
 import java.util.Arrays;
 
+/**
+   Sort an array in descending order using bubble sort.
+ 
+ */
+
 public class SortAnArrayInDescendingOrderUsingBubbleSort {
     public static void main(String[] args) {
         int[] arr = {1, 4, 2, 5, 3};
