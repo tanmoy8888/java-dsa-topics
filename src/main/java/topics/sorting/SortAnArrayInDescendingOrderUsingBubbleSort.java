@@ -1,10 +1,10 @@
-package topics.sorting.gfg;
+package topics.sorting;
 
 import java.util.Arrays;
 
 /**
    Sort an array in descending order using bubble sort.
- 
+
  */
 
 public class SortAnArrayInDescendingOrderUsingBubbleSort {

@@ -1,4 +1,4 @@
-package topics.sorting.gfg;
+package topics.sorting;
 
 /**
  *  GFG : https://www.geeksforgeeks.org/problems/check-if-an-array-is-sorted0701/1

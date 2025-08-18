@@ -1,4 +1,4 @@
-package topics.sorting.gfg;
+package topics.sorting.basic_sorting;
 
 import java.util.Arrays;
 
