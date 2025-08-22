@@ -4,8 +4,10 @@ import java.util.Arrays;
 
 public class FirstAndLastPositionOfASortedArray {
     public static void main(String[] args) {
-        int[] nums = {5, 7, 7, 8, 8, 10};
-        int target = 8;
+       /* int[] nums = {5, 7, 7, 8, 8, 10};
+        int target = 8;*/
+        int[] nums = {2, 2};
+        int target = 2;
         System.out.println("searchRange(nums,target) = " + Arrays.toString(searchRange(nums, target)));
     }
 
@@ -32,7 +34,7 @@ public class FirstAndLastPositionOfASortedArray {
             else if (nums[middle] < target) low = middle + 1;
             else {
                 lastIndex = middle;
-                low = middle + 11;
+                low = middle + 1;
             }
         }
         arr[0] = firstIndex;
