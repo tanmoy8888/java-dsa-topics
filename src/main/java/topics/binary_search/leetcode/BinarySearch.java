@@ -1,4 +1,4 @@
-package topics.binary_search;
+package topics.binary_search.leetcode;
 
 /**
   Leetcode : 704. Binary Search
