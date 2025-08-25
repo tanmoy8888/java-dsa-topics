@@ -13,12 +13,12 @@ public class PeakIndexOfMountainArray {
         int index = -1;
         while (low <= high) {
             int middle = (low + high) / 2;
-            if (arr[middle] > arr[middle + 1] && arr[middle] > arr[middle - 1]) {
+            if ((arr[middle] > arr[middle + 1]) && (arr[middle] > arr[middle - 1])) {
                 index = middle;
                 break;
             } else if (arr[middle] > arr[middle - 1]) {
                 low = middle + 1;
-            } else if (arr[middle] < arr[middle + 1]) {
+            } else {
                 high = middle - 1;
             }
         }
