@@ -9,8 +9,8 @@ public class MaximumCountOfPositiveAndNegativeNumber {
 
     public static int maximumCount(int[] nums) {
         int maximumCount = 0;
-        if (nums[0] < 0 && nums[nums.length - 1] < 0) maximumCount = nums.length - 1;
-        else if (nums[0] > 0 && nums[nums.length - 1] > 0) maximumCount = nums.length - 1;
+        if (nums[0] < 0 && nums[nums.length - 1] < 0) maximumCount = nums.length;
+        else if (nums[0] > 0 && nums[nums.length - 1] > 0) maximumCount = nums.length;
         else {
             int low = 0;
             int high = nums.length - 1;
