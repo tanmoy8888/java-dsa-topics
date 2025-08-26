@@ -27,8 +27,6 @@ package topics.binary_search.gfg;
  1 ≤ arr[i] ≤ 106
  0 ≤ x ≤ arr[n-1]
 
- 
-
  */
 
 public class FindTheFloorOfAnArray {
