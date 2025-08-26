@@ -5,21 +5,23 @@ public class FindTheFloorOfAnArray {
         int[] arr = {1, 2, 8, 10, 10, 12, 19};
         int x = 11;
         System.out.println("findFloor(arr, x) = " + findFloor(arr, x));
-
     }
 
     public static int findFloor(int[] arr, int x) {
-        int low = 1;
-        int high = arr.length - 2;
+        int low = 0;
+        int high = arr.length - 1;
         int index = -1;
         while (low <= high) {
+            System.out.println("low -----------" + low);
+            System.out.println("high = " + high);
             int middle = (low + high) / 2;
-            if ((arr[middle] == x) || (arr[middle] <= x && arr[middle - 1] <= x) || (arr[middle] <= x && arr[middle + 1] <= x)) {
+            System.out.println("middle = " + middle);
+            if (arr[middle] <= x) {
                 index = middle;
-                break;
-            } else if (arr[middle] > x) high = middle - 1;
-            else {
+                System.out.println("index = " + index);
                 low = middle + 1;
+            } else {
+                high = middle - 1;
             }
         }
         return index;
