@@ -12,13 +12,9 @@ public class FindTheFloorOfAnArray {
         int high = arr.length - 1;
         int index = -1;
         while (low <= high) {
-            System.out.println("low -----------" + low);
-            System.out.println("high = " + high);
             int middle = (low + high) / 2;
-            System.out.println("middle = " + middle);
             if (arr[middle] <= x) {
                 index = middle;
-                System.out.println("index = " + index);
                 low = middle + 1;
             } else {
                 high = middle - 1;
