@@ -18,13 +18,15 @@ public class SingleInSortedArray {
             while (low <= high) {
                 int middle = (low + high) / 2;
                 if ((nums[middle - 1] != nums[middle]) && (nums[middle] != nums[middle + 1])) return nums[middle];
-                int first = middle;
-                int second = middle;
-                if (nums[middle - 1] == nums[middle]) first = middle - 1;
-                else second = middle + 1;
-                int leftCount = first - low;
-                if (leftCount % 2 == 0) low = second + 1;
-                else high = first - 1;
+                else {
+                    int first = middle;
+                    int second = middle;
+                    if (nums[middle - 1] == nums[middle]) first = middle - 1;
+                    else second = middle + 1;
+                    int leftCount = first - low;
+                    if (leftCount % 2 == 0) low = second + 1;
+                    else high = first - 1;
+                }
             }
         }
         return -1;
