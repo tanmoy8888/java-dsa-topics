@@ -3,7 +3,8 @@ package topics.binary_search.leetcode;
 public class SingleInSortedArray {
     public static void main(String[] args) {
         //int[] nums = {1, 1, 2, 3, 3, 4, 4, 8, 8};
-        int[] nums = {3, 3, 7, 7, 10, 11, 11};
+        //int[] nums = {3, 3, 7, 7, 10, 11, 11};
+        int[] nums = {1, 1, 2};
         System.out.println("singleNonDuplicate(nums) = " + singleNonDuplicate(nums));
 
     }
@@ -11,7 +12,7 @@ public class SingleInSortedArray {
     public static int singleNonDuplicate(int[] nums) {
         if (nums.length == 1) return nums[0];
         if (nums[0] != nums[1]) return nums[0];
-        if (nums[nums.length - 1] != nums[nums.length - 1]) return nums[nums.length - 1];
+        if (nums[nums.length - 1] != nums[nums.length - 2]) return nums[nums.length - 1];
         else {
             int low = 0;
             int high = nums.length - 1;
