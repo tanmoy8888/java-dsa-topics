@@ -1,6 +1,7 @@
 package topics.binary_search.leetcode;
 
 /**
+ 
  Leetcode : 540. Single Element in a Sorted Array
 
  You are given a sorted array consisting of only integers where every element appears exactly twice,
