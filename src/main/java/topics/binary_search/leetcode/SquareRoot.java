@@ -11,7 +11,7 @@ package topics.binary_search.leetcode;
  For example, do not use pow(x, 0.5) in c++ or x ** 0.5 in python.
 
 
- Example 1:
+ Example 1:9
 
  Input: x = 4
  Output: 2
