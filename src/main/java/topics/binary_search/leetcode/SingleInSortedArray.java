@@ -30,6 +30,5 @@ public class SingleInSortedArray {
             }
         }
         return -1;
-
     }
 }
