@@ -1,4 +1,4 @@
-package topics.strings;
+package topics.strings.leetcode;
 
 /**
  Leetcode : 709. To Lower Case
@@ -23,7 +23,7 @@ package topics.strings;
 
  1 <= s.length <= 100
  s consists of printable ASCII characters.
- 
+
  */
 
 public class ToLowerCase {
