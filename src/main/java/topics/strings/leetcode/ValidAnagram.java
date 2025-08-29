@@ -4,6 +4,9 @@ import java.util.Arrays;
 
 /**
  Leetcode : 242. Valid Anagram
+
+ Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+
  
  */
 
