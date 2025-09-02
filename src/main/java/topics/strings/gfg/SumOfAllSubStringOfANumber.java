@@ -27,7 +27,7 @@ package topics.strings.gfg;
 
 public class SumOfAllSubStringOfANumber {
     public static void main(String[] args) {
-        String s = "6759";
+        String s = "12";
         System.out.println("sumSubstrings(s) = " + sumSubstrings(s));
     }
 
