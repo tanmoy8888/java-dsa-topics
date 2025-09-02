@@ -38,7 +38,7 @@ package topics.strings.leetcode;
  1 <= words[i].length <= 10
  words[i] consists of only lowercase English letters.
  0 <= left <= right < words.length
- 
+
  */
 
 public class CountNumberOfVowelString {
