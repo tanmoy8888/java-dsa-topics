@@ -6,7 +6,8 @@ public class CapitalizeTheTitle {
     public static void main(String[] args) {
         //String titile = "capiTalIze tHe titLe";
         //String titile = "First leTTeR of EACH Word";
-        String titile = "L hV";
+        //String titile = "L hV";
+        String titile = "X Gy y fE mC r P lR COZ Yfg mi eR hht Uf AGG B O V x N oMF Y B";
         System.out.println("capitalizeTitle(titile) = " + capitalizeTitle(titile));
     }
 
@@ -15,10 +16,13 @@ public class CapitalizeTheTitle {
         if (title.length() == 1 || title.length() == 2) return toLowerCase(title);
         else if (title.length() > 2) {
             String[] strArr = title.split(" ");
+            System.out.println("Arrays.toString(strArr) = " + Arrays.toString(strArr));
             for (String s : strArr) {
                 if (s.length() == 1 || s.length() == 2) {
                     if (!s.equals(strArr[strArr.length - 1])) {
+                        System.out.println("s = " + s);
                         sbTitle.append(toLowerCase(s) + " ");
+                        System.out.println("sbTitle = " + sbTitle);
                     } else {
                         sbTitle.append(toLowerCase(s));
                     }
