@@ -1,8 +1,11 @@
 package topics.strings.leetcode;
 
+import java.util.Arrays;
+
 public class CapitalizeTheTitle {
     public static void main(String[] args) {
-        String titile = "capiTalIze tHe titLe";
+        //String titile = "capiTalIze tHe titLe";
+        String titile = "First leTTeR of EACH Word";
         System.out.println("capitalizeTitle(titile) = " + capitalizeTitle(titile));
     }
 
@@ -18,6 +21,8 @@ public class CapitalizeTheTitle {
                     if (i == 0) {
                         if (!((int) arr[i] >= 65 && (int) arr[i] <= 90)) {
                             word.append((char) (arr[i] - 32));
+                        } else {
+                            word.append(arr[i]);
                         }
                     } else {
                         if ((int) arr[i] >= 65 && (int) arr[i] <= 90) {
