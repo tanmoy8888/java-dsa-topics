@@ -15,7 +15,6 @@ public class MostFrequentCharacter {
         else {
             char[] arr = s.toCharArray();
             Arrays.sort(arr);
-            System.out.println("Arrays.toString(arr) = " + Arrays.toString(arr));
             int i = 0, j = 0;
             int maxFrequency = 0;
             char ans = s.charAt(0);
@@ -30,6 +29,10 @@ public class MostFrequentCharacter {
                     }
                     i = j;
                 }
+            }
+            int freq = j - i;
+            if (maxFrequency < freq) {
+                ans = arr[i];
             }
             return ans;
         }
