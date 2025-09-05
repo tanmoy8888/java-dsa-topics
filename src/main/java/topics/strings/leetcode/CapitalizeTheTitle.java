@@ -5,7 +5,8 @@ import java.util.Arrays;
 public class CapitalizeTheTitle {
     public static void main(String[] args) {
         //String titile = "capiTalIze tHe titLe";
-        String titile = "First leTTeR of EACH Word";
+        //String titile = "First leTTeR of EACH Word";
+        String titile = "L hV";
         System.out.println("capitalizeTitle(titile) = " + capitalizeTitle(titile));
     }
 
@@ -15,8 +16,13 @@ public class CapitalizeTheTitle {
         else if (title.length() > 2) {
             String[] strArr = title.split(" ");
             for (String s : strArr) {
-                if (s.length() == 1 || s.length() == 2) return toLowerCase(title);
-                else {
+                if (s.length() == 1 || s.length() == 2) {
+                    if (!s.equals(strArr[strArr.length - 1])) {
+                        sbTitle.append(toLowerCase(s) + " ");
+                    } else {
+                        sbTitle.append(toLowerCase(s));
+                    }
+                } else {
                     char[] arr = s.toCharArray();
                     StringBuilder word = new StringBuilder();
                     for (int i = 0; i < arr.length; i++) {
