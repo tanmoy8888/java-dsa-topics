@@ -14,7 +14,6 @@ public class StringCompression {
             StringBuilder sb = new StringBuilder();
             int i = 0, j = 0;
             int frequency = 0;
-            Arrays.sort(chars);
             while (j < chars.length) {
                 if (chars[i] == chars[j]) {
                     j++;
