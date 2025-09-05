@@ -1,6 +1,5 @@
 package topics.strings.leetcode;
 
-import java.util.Arrays;
 
 public class StringCompression {
     public static void main(String[] args) {
