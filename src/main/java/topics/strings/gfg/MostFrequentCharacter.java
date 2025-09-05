@@ -20,7 +20,7 @@ import java.util.Arrays;
  Constraints:
  1 ≤ |s| ≤ 100
 
- 
+
  */
 
 public class MostFrequentCharacter {
@@ -51,6 +51,7 @@ public class MostFrequentCharacter {
                     i = j;
                 }
             }
+            // This is for the last index
             int freq = j - i;
             if (maxFrequency < freq) {
                 ans = arr[i];
