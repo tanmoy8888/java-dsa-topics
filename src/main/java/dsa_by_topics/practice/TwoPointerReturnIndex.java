@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * THIS IS NOT TWO POINTER APPROACH - This is using extra space
+ * THIS IS NOT TWO POINTER APPROACH - This is using extra space , complexity O(N)
  */
 
 public class TwoPointerReturnIndex {
