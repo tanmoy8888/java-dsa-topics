@@ -21,7 +21,6 @@ public class TwoPointerReturnIndex {
         for (int i = 0; i < arr.length; i++) {
             map.put(arr[i], i);
         }
-        System.out.println("map.entrySet() = " + map.entrySet());
         for (int i = 0; i < arr.length; i++) {
             if (map.containsKey(target - arr[i]) && (map.get(target - arr[i]) != i)) {
                 result[0] = i;
