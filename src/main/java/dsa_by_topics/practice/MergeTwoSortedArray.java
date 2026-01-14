@@ -29,7 +29,7 @@ public class MergeTwoSortedArray {
         int i = 0;
         int j = 0;
         int k = 0;
-        int[] temp = null;
+        int[] temp;
         if (m == 0) {
             temp = new int[1];
         } else {
