@@ -6,7 +6,7 @@ public class SquareOfSortedArray {
     public static void main(String[] args) {
         //int[] nums = {-4, -1, 0, 3, 10};
         //int[] nums = {-1};
-        int[] nums = {-1,2,2};
+        int[] nums = {-1, 2, 2};
         SquareOfSortedArray square = new SquareOfSortedArray();
         System.out.println("Arrays.toString(square.sortedSquares(nums)) = " + Arrays.toString(square.sortedSquares(nums)));
 
@@ -20,11 +20,9 @@ public class SquareOfSortedArray {
             int k = 0;
             for (int i = 0; i < nums.length; i++) {
                 if (nums[i] < 0) {
-                    System.out.println("nums[i] = " + nums[i]);
                     m = m + 1;
                 }
             }
-            System.out.println("m = " + m);
             if (m == nums.length) {
                 for (int i = 0; i < nums.length; i++) {
                     nums[i] = nums[i] * nums[i];
@@ -37,10 +35,8 @@ public class SquareOfSortedArray {
                 }
                 return negative_reverse;
             } else {
-                int[] negative = Arrays.copyOfRange(nums, 0, m + 1);
-                int[] positive = Arrays.copyOfRange(nums, m + 1, nums.length);
-                System.out.println("negative = " + Arrays.toString(negative));
-                System.out.println("positive = " + Arrays.toString(positive));
+                int[] negative = Arrays.copyOfRange(nums, 0, m);
+                int[] positive = Arrays.copyOfRange(nums, m, nums.length);
                 for (int i = 0; i < negative.length; i++) {
                     negative[i] = negative[i] * negative[i];
                 }
@@ -50,11 +46,9 @@ public class SquareOfSortedArray {
                     negative_reverse[j] = negative[i];
                     j++;
                 }
-                System.out.println("negative_reverse after square = " + Arrays.toString(negative_reverse));
                 for (int i = 0; i < positive.length; i++) {
                     positive[i] = positive[i] * positive[i];
                 }
-                System.out.println("positive after square = " + Arrays.toString(positive));
                 while (first < negative_reverse.length && second < positive.length) {
                     if (negative_reverse[first] < positive[second]) {
                         nums[k] = negative_reverse[first];
