@@ -9,20 +9,20 @@ import java.util.Arrays;
 public class MergeTwoSortedArray {
     public static void main(String[] args) {
         // First case
-       /* int[] nums1 = {1, 2, 3, 0, 0, 0};
+        int[] nums1 = {1, 2, 3, 0, 0, 0};
         int m = 3;
         int[] nums2 = {2, 5, 6};
         int n = 3;
         MergeTwoSortedArray merge = new MergeTwoSortedArray();
-        merge.merge(nums1, m, nums2, n);*/
+        merge.merge(nums1, m, nums2, n);
 
         // Second case
-        int[] nums1 = {0};
+    /*    int[] nums1 = {0};
         int m = 0;
         int[] nums2 = {1};
         int n = 1;
         MergeTwoSortedArray merge = new MergeTwoSortedArray();
-        merge.merge(nums1, m, nums2, n);
+        merge.merge(nums1, m, nums2, n);*/
     }
 
     public void merge(int[] nums1, int m, int[] nums2, int n) {
@@ -51,10 +51,11 @@ public class MergeTwoSortedArray {
             k++;
         }
         while (j < n) {
-            nums1[k] = temp[j];
+            nums1[k] = nums2[j];
             j++;
             k++;
         }
+        System.out.println("Arrays.toString(nums1) = " + Arrays.toString(nums1));
     }
 
 }
