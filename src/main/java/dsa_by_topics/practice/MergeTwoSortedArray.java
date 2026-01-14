@@ -55,6 +55,7 @@ public class MergeTwoSortedArray {
             j++;
             k++;
         }
+        System.out.println("Arrays.toString(nums1) = " + Arrays.toString(nums1));
     }
 
 }
