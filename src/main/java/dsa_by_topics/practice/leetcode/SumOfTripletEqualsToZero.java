@@ -33,20 +33,23 @@ import java.util.List;
 
 public class SumOfTripletEqualsToZero {
     public static void main(String[] args) {
-        int[] nums = {-1, 0, 1, 2, -1, -4};
+        //int[] nums = {-1, 0, 1, 2, -1, -4};
+        int[] nums = {0,1,1};
         System.out.println("threeSum(nums) = " + threeSum(nums));
     }
 
     public static List<List<Integer>> threeSum(int[] nums) {
         Arrays.sort(nums);
         int n = nums.length;
+        System.out.println("Arrays.toString(nums) = " + Arrays.toString(nums));
         List<List<Integer>> list = new ArrayList<>();
         for (int i = 0; i < n - 2; i++) {
-            if (i > 0 && nums[i] == nums[i - 1]) {
+            if (i > 0 && (nums[i-1] == nums[i])) {
                 continue;
             } else {
                 int left = i + 1;
                 int right = n - 1;
+                System.out.println("i = " + i);
                 int sum = -nums[i];
                 while (left < right) {
                     int current = nums[left] + nums[right];
@@ -54,6 +57,7 @@ public class SumOfTripletEqualsToZero {
                         List<Integer> found = new ArrayList<>();
                         found.add(nums[left]);
                         found.add(nums[right]);
+                        found.add(nums[i]);
                         list.add(found);
                         left++;
                         right--;
