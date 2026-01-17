@@ -49,7 +49,6 @@ public class SumOfTripletEqualsToZero {
             } else {
                 int left = i + 1;
                 int right = n - 1;
-                System.out.println("i = " + i);
                 int sum = -nums[i];
                 while (left < right) {
                     int current = nums[left] + nums[right];

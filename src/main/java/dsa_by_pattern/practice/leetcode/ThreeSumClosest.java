@@ -46,6 +46,8 @@ public class ThreeSumClosest {
             if (i > 0 && (nums[i] == nums[i - 1])) {
                 continue;
             } else {
+             int left = 1;
+             int right = n-1;
 
             }
         }
