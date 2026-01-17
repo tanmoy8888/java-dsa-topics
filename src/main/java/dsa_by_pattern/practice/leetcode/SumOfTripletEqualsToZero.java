@@ -1,4 +1,4 @@
-package dsa_by_topics.practice.leetcode;
+package dsa_by_pattern.practice.leetcode;
 
 import java.util.ArrayList;
 import java.util.Arrays;

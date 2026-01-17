@@ -1,4 +1,4 @@
-package dsa_by_topics.practice;
+package dsa_by_pattern.practice;
 
 import java.util.Arrays;
 
