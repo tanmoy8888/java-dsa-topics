@@ -34,7 +34,8 @@ package dsa_by_pattern.practice.leetcode;
 
 public class ThreeSumClosest {
     public static void main(String[] args) {
-
+    int [] nums ={-1,2,1,-4};
+    int target = 1;
     }
     public static int threeSumClosest(int[] nums, int target) {
 
