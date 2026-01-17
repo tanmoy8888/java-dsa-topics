@@ -57,13 +57,9 @@ public class ThreeSumClosest {
                 while (left < right) {
                     sum = nums[i] + nums[left] + nums[right];
                     diff = Math.abs(target - sum);
-                    System.out.println("sum = " + sum);
-                    System.out.println("diff = " + diff);
                     if (diff < max_diff) {
                         max_diff = diff;
                         lowest_sum = sum;
-                        System.out.println("max_diff = " + max_diff);
-                        System.out.println("lowest_sum = " + lowest_sum);
                     }
                     if (sum < target) {
                         left++;
