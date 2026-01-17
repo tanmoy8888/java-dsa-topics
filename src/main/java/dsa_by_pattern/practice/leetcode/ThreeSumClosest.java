@@ -34,7 +34,9 @@ import java.util.Arrays;
 
 public class ThreeSumClosest {
     public static void main(String[] args) {
-        int[] nums = {-1, 2, 1, -4};
+      /*  int[] nums = {-1, 2, 1, -4};
+        int target = 1;*/
+        int[] nums = {0, 0, 0};
         int target = 1;
         System.out.println("threeSumClosest(nums,target) = " + threeSumClosest(nums, target));
     }
@@ -42,14 +44,37 @@ public class ThreeSumClosest {
     public static int threeSumClosest(int[] nums, int target) {
         Arrays.sort(nums);
         int n = nums.length;
+        int sum = 0;
+        int lowest_sum = 0;
+        int max_diff = Integer.MAX_VALUE;
+        int diff = 0;
         for (int i = 0; i < n - 2; i++) {
             if (i > 0 && (nums[i] == nums[i - 1])) {
                 continue;
             } else {
-             int left = 1;
-             int right = n-1;
-
+                int left = i + 1;
+                int right = n - 1;
+                while (left < right) {
+                    sum = nums[i] + nums[left] + nums[right];
+                    diff = Math.abs(target - sum);
+                    System.out.println("sum = " + sum);
+                    System.out.println("diff = " + diff);
+                    if (diff < max_diff) {
+                        max_diff = diff;
+                        lowest_sum = sum;
+                        System.out.println("max_diff = " + max_diff);
+                        System.out.println("lowest_sum = " + lowest_sum);
+                    }
+                    if (sum < target) {
+                        left++;
+                    } else if (sum > target) {
+                        right--;
+                    } else {
+                        return sum;
+                    }
+                }
             }
         }
+        return lowest_sum;
     }
 }
