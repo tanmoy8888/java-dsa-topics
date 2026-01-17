@@ -1,4 +1,4 @@
-package dsa_by_pattern.practice;
+package dsa_by_pattern.practice.two_pointer.practice;
 
 import java.util.Arrays;
 import java.util.HashMap;
