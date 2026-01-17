@@ -28,5 +28,6 @@ public class MoveZeros {
             nums[non_zero] = 0;
             non_zero++;
         }
+        System.out.println("Arrays.toString(nums) = " + Arrays.toString(nums));
     }
 }
