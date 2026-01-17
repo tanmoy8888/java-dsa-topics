@@ -1,5 +1,7 @@
 package dsa_by_pattern.practice.leetcode;
 
+import java.util.Arrays;
+
 /**
  * Leetcode 16. 3Sum Closest
  * <p>
@@ -38,6 +40,14 @@ public class ThreeSumClosest {
     }
 
     public static int threeSumClosest(int[] nums, int target) {
+        Arrays.sort(nums);
+        int n = nums.length;
+        for (int i = 0; i < n - 2; i++) {
+            if (i > 0 && (nums[i] == nums[i - 1])) {
+                continue;
+            } else {
 
+            }
+        }
     }
 }
