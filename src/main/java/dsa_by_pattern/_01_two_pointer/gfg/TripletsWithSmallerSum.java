@@ -1,4 +1,4 @@
-package dsa_by_pattern.two_pointer.gfg;
+package dsa_by_pattern._01_two_pointer.gfg;
 
 import java.util.Arrays;
 

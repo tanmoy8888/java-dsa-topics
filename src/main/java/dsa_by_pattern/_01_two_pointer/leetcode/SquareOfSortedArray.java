@@ -1,4 +1,4 @@
-package dsa_by_pattern.two_pointer.leetcode;
+package dsa_by_pattern._01_two_pointer.leetcode;
 
 import java.util.Arrays;
 

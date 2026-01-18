@@ -1,4 +1,4 @@
-package dsa_by_pattern.sliding_window;
+package dsa_by_pattern._02_sliding_window;
 
 public class MaximumSumOfKLengthSubArray {
     public static void main(String[] args) {
