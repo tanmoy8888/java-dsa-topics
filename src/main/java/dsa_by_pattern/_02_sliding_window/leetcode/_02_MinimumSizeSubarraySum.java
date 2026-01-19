@@ -1,5 +1,12 @@
 package dsa_by_pattern._02_sliding_window.leetcode;
 
+/**
+ *  Leetcode 209. Minimum Size Subarray Sum
+ *
+ *  https://leetcode.com/problems/minimum-size-subarray-sum/description/
+ *
+ */
+
 public class _02_MinimumSizeSubarraySum {
     public static void main(String[] args) {
         int[] nums = {2, 3, 1, 2, 4, 3};
